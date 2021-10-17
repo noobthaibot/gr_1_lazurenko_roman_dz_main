@@ -63,8 +63,33 @@
 .header-img div{
     padding: 10px 0;
 }   
+.news-container {
+    justify-content: space-evenly;
+}
+.news-item {
+    /* padding-right: 120px; */
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 10px 10px;
+}
+.second-bg {
+    background-color: #EEF5FC;
+}
+.news-item {
+    background-color: #ffffff;
+    width: 340px;  
+}
+.date-link {
+    display: flex;
+    justify-content: space-between;
 
-
+}
+.news-item img {
+    box-sizing: border-box;
+    
+}
 
 
 
