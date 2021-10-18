@@ -1,3 +1,6 @@
+body {
+    font-family: 'Montserrat', sans-serif;;
+}
 .nav-links {
     padding-top: 10px;
     display: flex;
@@ -13,6 +16,20 @@
 .nav-links li a {
     text-decoration: none;
     color: #3C4A54;
+    font-size: 14px;
+    
+}
+.active {
+    margin-top: 7px;
+}
+.active a::after {
+    content: "";
+    display: block;
+    margin-top: 5px;
+    width: 80px;
+    height: 2px;
+    background: url(../img/active.png);
+
 }
 .nav-links li:not(:last-child)::after {
     content: "";
@@ -91,6 +108,19 @@
 }
 .course-title {
     padding-bottom: 30px;
+    font-weight: 700;
+    color: #3C4A54;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.course-title::after {
+    content: "";
+    width: 81px;
+    height: 3px;
+    display: block;
+    background: url(../img/horline1.png);
+    margin-top: 7px;
 }
 .stage-item {
     display: flex;
@@ -237,15 +267,16 @@
     border: 1px solid #E29E29;
     box-sizing: border-box;
     border-radius: 30px;
-    padding: 10px 45px;
+    padding: 10px 65px;
     text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
 }
 .banner-btn p {
     margin-top: 30px;
-    width: 340px;
+    width: 310px;
     color: #731D1D;
-    font-style:italic;
-
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
 }
 
 /* 
@@ -266,6 +297,15 @@
     .about-item-text h3{
         text-align: center;
         padding: 15px 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .about-item-img {
+        display: block;
+        margin: 0 10px;
+    }
+    .item {
+        min-height: 234px;
     }
     .rev-img { 
         display: flex;
@@ -291,6 +331,7 @@
     .header-img div{
         padding: 15px 0px 10px 0;
     }   
+
    
 }
 @media (max-width: 767px) {
