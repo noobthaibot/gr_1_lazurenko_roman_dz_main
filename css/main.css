@@ -3,19 +3,55 @@
     display: flex;
     list-style: none;
     align-items: center;
+    margin-left: 100px;
 }
 .nav-links li {
+    display: flex;
+    align-items: center ;    
     padding: 10px 15px;
- 
 }
 .nav-links li a {
     text-decoration: none;
     color: #3C4A54;
 }
+.nav-links li:not(:last-child)::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 34px;
+    background: url(../img/horline.png);
+    margin-left: 20px;
+}
 .header-img {
     margin: 0 auto;
 }
-
+.login-btn {
+    background: #EEF5FC;
+    width: 166px;
+    height: 36px;
+    box-sizing: border-box;
+    color: #3C4A54;
+    font-size: 12px;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    margin-top: 20px;
+}
+.login-btn::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 18px;
+    background: url(../img/user.png);
+    margin-right: 10px;
+    background-size: contain;
+}
+.reg-link {
+    font-size: 12px;
+    color: #79AE41;
+    padding-left: 50px;
+}
 .about-item-text p,
 .about-item-text h3{
     text-align: end;
@@ -81,6 +117,8 @@
     display: flex;
     flex-direction: row-reverse;
     background: url(../img/bannerbg.png);
+    align-items: center;
+    justify-content: space-between;
 }
 .news-container {
     justify-content: space-evenly;
@@ -189,6 +227,26 @@
     font-size: 14px;
     color: #636C72;
 }
+.banner-btn {
+    padding-left: 120px;
+    padding-top: 200px;
+}
+.banner-btn a {
+    color: #731D1D;
+    background: #DE9A25;
+    border: 1px solid #E29E29;
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 10px 45px;
+    text-decoration: none;
+}
+.banner-btn p {
+    margin-top: 30px;
+    width: 340px;
+    color: #731D1D;
+    font-style:italic;
+
+}
 
 /* 
 @media (max-width: 800px) {
@@ -227,6 +285,12 @@
         background-position-x: 180px;
         background-position-y: 50px, 360px, 667px;
     }
+    .img-docs {
+        margin-bottom: 15px;
+    }
+    .header-img div{
+        padding: 15px 0px 10px 0;
+    }   
    
 }
 @media (max-width: 767px) {
@@ -236,4 +300,5 @@
     .item-img .point {
         display: none;
     }
+  
 }
