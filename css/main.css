@@ -92,15 +92,16 @@ body {
 .about-item-text h3{
     text-align: end;
     padding: 15px 10px;
+    margin: 0;
 }
 .about-item-img {
     max-width: 100%;
     height: 169px;
     margin: 0 auto;
 }
-.item {
+/* .item {
     height: 169px;
-}
+} */
 .about-item-img img{
     max-width: 100%;
     display: block;
@@ -160,7 +161,8 @@ body {
     padding: 0px 0px 10px 0;
 }   
 .header-items-img {
-    max-width: 100%;
+    width: 100%;
+    display: block;
 }
 .flex-img {
     display: flex;
