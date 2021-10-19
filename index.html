@@ -13,29 +13,28 @@
 </head>
 <body>
     <header>
-        <div class="container-xxl">
-            <div class="nav-row container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-sm-12 col-lg-1">
-                        <a href="/"><img src="./img/logo.png" alt="logo"></a>
-                    </div>
-                    <div class="col-sm-12 col-lg-8">
-                        <nav>
-                            <ul class="nav-links">
-                                <li class="active"><a href="#">О конкурсе</a></li>
-                                <li><a href="#">Новости</a></li>
-                                <li><a href="#">Документы</a></li>
-                                <li><a href="#">Эксперты</a></li>
-                                <li><a href="#">Конкурсные работы</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col-sm-12 col-lg-3">
+        <nav class="navbar fixed-top navbar-expand-xl navbar-light bg-light">
+            <div class="container">
+                <a href="/"><img src="./img/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="nav-links navbar-nav mr-auto mb02">
+                        <li class="active nav-item"><a href="#">О конкурсе</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Новости</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Документы</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Эксперты</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Конкурсные работы</a></li>
+                    </ul>
+                    <div class="col-sm-12 col-lg-3 pos-center">
                         <button type="button" class="login-btn">Вход в кабинет</button>
                         <a class="reg-link" href="#">Регистрация</a>
-                    </div> 
+                    </div>
                 </div>
             </div>
+        </nav>
+        <div class="container-xxl">
             <div class="row content">
                 <div class="col-12 flex-img">
                     <img src="./img/bgwoman.png" alt="...">
@@ -45,6 +44,8 @@
                     </div>
                 </div>
             </div>
+        </div>      
+        <div class="container-xxl">
             <div class="row header-img">
                 <div class="col-xl-3 col-sm-6 col-12 text-center">
                     <a href="#"><img class="header-items-img" src="./img/01.png" alt="..."></a>
@@ -181,7 +182,7 @@
                 <div class="row news-container">
                     <div class="col-lg-3 col-sm-12">
                         <div class="news-item">
-                            <img src="./img/newsimg.png" alt="...">
+                            <a href="#"><img src="./img/newsimg.png" alt="..."></a>
                             <h3>Старт конкурса</h3>
                             <p>Определена дата старта  конкурса выявления лучших практик и  модели  организации горячего питания обучающихся общеобразовательных организаций</p>
                             <div class="date-link">
@@ -192,7 +193,7 @@
                     </div>
                     <div class="col-lg-3 col-sm-12">
                         <div class="news-item">
-                            <img src="./img/newsimg.png" alt="...">
+                            <a href="#"><img src="./img/newsimg.png" alt="..."></a>
                             <h3>Старт конкурса</h3>
                             <p>Определена дата старта  конкурса выявления лучших практик и  модели  организации горячего питания обучающихся общеобразовательных организаций</p>
                             <div class="date-link">
@@ -203,7 +204,7 @@
                     </div>
                     <div class="col-lg-3 col-sm-12">
                         <div class="news-item">
-                            <img src="./img/newsimg.png" alt="...">
+                            <a href="#"><img src="./img/newsimg.png" alt="..."></a>
                             <h3>Старт конкурса</h3>
                             <p>Определена дата старта  конкурса выявления лучших практик и  модели  организации горячего питания обучающихся общеобразовательных организаций</p>
                             <div class="date-link">
@@ -221,9 +222,12 @@
         <section class="docs">
             <div class="container-xxl">
                 <div class="row">
-                    <div class="col-xl-3 col-md-6 col-sm-12 img-docs">
-                        <div class="docs-item">
-                            <img class="docs-img" src="./img/docs1.png" alt="...">
+                    <div class="col-xl-3 col-md-6 col-sm-12 bg-docs">
+                        <div class="docs-item bg-first">
+                            <div class="docs-text">
+                                <h4>ДОКУМЕНТЫ</h4>
+                            </div>
+                            <a href="#"><img src="./img/page.png" alt=""></a>
                         </div>
                     </div>
                     <div class="col-xl-3 col-md-6 col-sm-12 bg-docs">

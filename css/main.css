@@ -18,6 +18,7 @@ body {
 }
 .content {
     padding-top: 102px;
+    width: 100%;
 }
 .nav-links {
     padding-top: 10px;
@@ -46,9 +47,11 @@ body {
     margin-top: 5px;
     width: 80px;
     height: 2px;
-    background: url(../img/active.png);
+    
     margin-left: 3px;
-
+}
+.active a::after:hover{
+    background: url(../img/active.png);
 }
 .nav-links li:not(:last-child)::after {
     content: "";
@@ -204,7 +207,24 @@ body {
     justify-content: space-between;
 
 }
-
+.news-link {
+    color: #5B676F;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.news-link::before {
+    content: "";
+    width: 15px;
+    height: 19px;
+    background-image: url(../img/file.png);
+    margin-right: 10px;
+}
+.pos-center {
+    margin: 0 auto;
+    padding-left: 75px;
+}
 .docs-item {
     max-width: 330px;
     height: 168px;
@@ -212,32 +232,39 @@ body {
     align-items: center;
     box-sizing: border-box;
     margin: 0 auto;
-    background-image: url(../img/bgnews.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+    background:#CBDEEF;
 }
 .docs-item a {
     margin-left: 40px;
 }
 .docs-img {
-    display: block;
-    max-width: 100%;
-    max-height: 100%;
-    box-sizing: border-box;
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 40px;
 }
-
+.docs-img::after {
+    content: '';
+    display: block;
+    margin-left: 20px;
+    width: 53px;
+    height: 60px;
+    flex: 0 0 auto;
+    background: url(../img/page.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 .docs-text h4 {
     font-size: 18px;
 }
 .docs-text p {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 19px;
     text-align: justify;
 }
 .docs-text {
     width: 185px;
-    padding: 45px 15px 0 15px;
+    padding: 25px 15px 0 15px;
 }
 .img-docs {
     padding: 0;
@@ -299,8 +326,28 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-style: italic;
 }
+.docs-item.bg-first {
+    background: #79AE41;
+}
+.date-link a{
+    color: #79AE41;
+    display: flex;
+    align-items: center;
+}
+.date-link a::after{
+    content: "";
+    display: block;
+    width: 16px;
+    height: 9px;
+    background-image: url(../img/linkarrow.png);
+    flex: 0 0 auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+}
 
-/* 
+
+
 @media (max-width: 800px) {
     .bg-snake {
         background: url(../img/linehr.png),
@@ -361,6 +408,16 @@ body {
     } 
     .item-img .point {
         display: none;
+    }
+    .flex-img {
+        position: relative;
+    }
+    .banner-btn {
+        padding: 200px 0 0 0;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
     }
   
 }
