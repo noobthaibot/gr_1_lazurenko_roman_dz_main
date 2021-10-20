@@ -345,7 +345,67 @@ body {
     background-repeat: no-repeat;
     margin-left: 5px;
 }
-
+.form-field,
+.textarea-div {
+    position: relative;
+}
+.form-input {
+    width: 190px;
+}
+.form-input,
+.textarea {
+    padding-left: 30px;
+    margin-right: 40px;
+}
+.form-label {
+    top: 50%;
+}
+.form-label,
+.textarea-label {
+    position: absolute;
+    left: 30px;
+    transform: translateY(-50%);
+    font-style: italic;
+    transition: transform 250ms linear;
+}
+.textarea-div {
+    position: relative;
+    margin-top: 50px;
+}
+.textarea-label {
+    position: absolute;
+    top: 14px;
+}
+.form-input:focus + .form-label, .form-input:not(:placeholder-shown) + .form-label {
+    transform:  translateY(-40px);
+}
+.textarea:focus + .textarea-label, .textarea:not(:placeholder-shown) + .textarea-label {
+    transform:  translateY(-40px);
+}
+.textarea {
+    /* margin-top: 50px; */
+    width: 420px;
+    height: 150px;
+}
+form {
+    margin-top: 40px;
+}
+.form-button {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 210px;
+}
+.questions-left img {
+    margin-left: 150px;
+}
+.main-questions-bg {
+    background-color: #EEF5FC;
+}
+.questions-bg {
+    background: url(../img/footerbg.png);
+    background-repeat: no-repeat;
+    margin-left: 1px;
+}
 
 
 @media (max-width: 800px) {
@@ -358,7 +418,7 @@ body {
         background-position-x: 180px;
         background-position-y: 50px, 360px, 693px;
     } 
-     */
+     
     
 @media (max-width: 990px) {
     .about-item-text p,
