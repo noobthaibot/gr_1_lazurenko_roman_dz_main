@@ -89,11 +89,11 @@ body {
 }
 .reg-link {
     
-    display: block;
+    display: inline-block;
     font-size: 12px;
     color: #79AE41;
-    padding-left: 50px;
     margin: 0 auto;
+    margin-top: 10px;
 }
 .about-item-text p,
 .about-item-text h3{
@@ -228,6 +228,9 @@ body {
 .pos-center {
     margin: 0 auto;
     padding-left: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
 }
 .docs-item {
     max-width: 330px;
@@ -395,20 +398,33 @@ form {
     margin-top: 40px;
 }
 .form-button {
-    display: flex;
-    flex-direction: row-reverse;
-    padding-right: 210px;
+    width: 220px;
+    display: block;
+    background: #DE9A25;
+    order: 1px solid #E29E29;
+    box-sizing: border-box;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .questions-left img {
-    margin-left: 150px;
+    margin: 0 auto;
+    display: block;
 }
 .main-questions-bg {
     background-color: #EEF5FC;
 }
-.questions-bg {
+.quest-bg {
     background: url(../img/footerbg.png);
     background-repeat: no-repeat;
     margin-left: 1px;
+}
+.questions-bg {
+    background-color:#CBDEEF;
+}
+.bot-form {
+    margin: 0 auto;
 }
 
 
@@ -427,6 +443,12 @@ form {
     .left-text {
         flex: 0 1 auto;
     }
+    .nav-links li:not(:last-child)::after {
+        display: none;
+    }
+    .bg-snake {
+        background:#ffffff;
+    }  
     
 }    
 @media (max-width: 990px) {
@@ -467,6 +489,9 @@ form {
     }
     .header-img div{
         padding: 15px 0px 10px 0;
+    }
+    .bg-snake {
+        background:#ffffff;
     }  
 }
 @media (max-width: 767px) {
@@ -484,7 +509,31 @@ form {
         position: absolute;
         top:50%;
         left:50%;
-        transform:translate(-50%, -50%);
+        transform:translate(-50%, -50%); 
     }
-  
+    .nav-links li:not(:last-child)::after {
+        display: none;
+    }
+}
+@media screen and (width:1100px) {
+    .nav-links li:not(:last-child)::after {
+        display: none;
+    }
+    .bg-snake {
+        background:#ffffff;
+    }  
+}
+@media screen and (min-width:840px) {
+    .nav-links li:not(:last-child)::after {
+        display: none;
+    }
+    .bg-snake {
+        background:#ffffff;
+    }  
+}
+@media screen and (min-width:1234px) {
+    .left-text {
+        display: none;
+    }
+    
 }
