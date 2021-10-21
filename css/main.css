@@ -411,20 +411,46 @@ form {
 .questions-left img {
     margin: 0 auto;
     display: block;
+    width: 50%;
 }
 .main-questions-bg {
     background-color: #EEF5FC;
 }
-.quest-bg {
+.questions-bg {
     background: url(../img/footerbg.png);
     background-repeat: no-repeat;
+    background-size: contain;
     margin-left: 1px;
+    height: 355px;
+    z-index: 2;
 }
-.questions-bg {
-    background-color:#CBDEEF;
+.quest-bg {
+    background-color:#EEF5FC;
+    z-index: 1;
 }
 .bot-form {
     margin: 0 auto;
+}
+address a{
+    text-decoration: none;
+    color: inherit;
+    margin-top: 20px;
+}
+.footer-list {
+    margin-top: 20px;
+}
+.footer-list ul {
+    list-style: none;
+}
+.footer-list li a{
+    text-decoration: none;
+    color: inherit;
+}
+.footer-title {
+    margin-top: 20px;
+}
+.footer-bg  {
+    background-color: #CBDEEF;
 }
 
 
